@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Miata - stro.io</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/color-brewer.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../extra.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+     <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">stro.io</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Miata</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#wiring" class="nav-link">Wiring</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#parts-reference" class="nav-link">Parts Reference</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a class="glightbox" href="../img/miata-banner.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/miata-banner.jpg" /></a></p>
+<h1 id="wiring">Wiring</h1>
+<p><br></p>
+<h3 id="main-power">Main Power</h3>
+<p>The main Battery Positive (B+) connection is 2AWG-equivalent and runs to a SURLOK bulkhead connector acting as a distribution lug inside of the passenger side transmission tunnel. The cabin side of the SURLOK connector goes directly to the PDM to supply power.</p>
+<p>
+  <a class="glightbox" href="https://dummyimage.com/1800x1200/d9c8d9/fff.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" /></a>
+  <a class="glightbox" href="https://dummyimage.com/1800x1200/d9c8d9/fff.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" /></a> 
+  <a class="glightbox" href="https://dummyimage.com/1800x1200/d9c8d9/fff.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" /></a>
+</p>
+
+<p><br></p>
+<h3 id="starting-and-charging">Starting and Charging</h3>
+<p>The starter and alternator primary studs are connected to the transmission tunnel distribution block, which connects them back to B+. The alternator voltage reference wire is also connected to this distribution block. It would be more ideal to run the reference wire directly to the B+ terminal, but the voltage drop along the 2AWG B+ cable should be minimal.</p>
+<p><br></p>
+<h3 id="engine-wiring-harness">Engine Wiring Harness</h3>
+<p>The engine wiring harness was designed to be quick-disconnect by way of two circular connectors. Amphenol circular connectors were chosen for cost reasons compared to their motorsport-equivalent. Instead of running the front-of-engine sensors around the side, they are instead routed through the valley between the intake and fuel rail to allow for a more condensed setup. One connector is dedicated for ECU and sensors, while the other has a few larger pins for high power demand items and is mostly dedicated for power into the engine bay. </p>
+<p>
+  <a class="glightbox" href="https://dummyimage.com/1800x1200/d9c8d9/fff.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" /></a>
+  <a class="glightbox" href="https://dummyimage.com/1800x1200/d9c8d9/fff.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" /></a> 
+</p>
+
+<p><br></p>
+<h1 id="parts-reference">Parts Reference</h1>
+<table>
+<thead>
+<tr>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">Part Number</div></th>
+<th><div style="width:10em; font-weight: bold; font-size: 15px;">Description</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SLPRBTPSO</td>
+<td>B+ Distribution Lug</td>
+</tr>
+<tr>
+<td>SLPPB25BSO</td>
+<td>B+ Cabin PDM Feed</td>
+</tr>
+<tr>
+<td>HDP24-24-21SE</td>
+<td>Engine bay power bulkhead</td>
+</tr>
+<tr>
+<td>HDP26-24-21PE</td>
+<td>Engine bay power plug</td>
+</tr>
+<tr>
+<td>HDP24-24-31SE</td>
+<td>Engine bay sensor bulkhead</td>
+</tr>
+<tr>
+<td>HDP26-24-31PE</td>
+<td>Engine bay sensor plug</td>
+</tr>
+</tbody>
+</table>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body>
+    <div class="container">
+        <div class="parts-item">
+            <a href="https://www.amphenol-industrial.de/en/products/xev-connectors/surlok/male-receptacle-1-pole-slprbtpso" class="parts-link">SLPRBTPSO</a>
+            <span class="parts-description">B+ Distribution Lug</span>
+        </div>
+        <div class="parts-item">
+            <a href="https://www.amphenol-industrial.de/en/products/xev-connectors/surlok/male-receptacle-1-pole-slprbtpso" class="parts-link">SLPPB25BSO</a>
+            <span class="parts-description">B+ Cabin PDM Feed</span>
+        </div>
+    </div>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+</html>
+<br><br> --></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

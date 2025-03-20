@@ -1,0 +1,41 @@
+site_name: stro.io
+theme: 
+    name: lux
+    #name: material
+
+nav:
+  - About: 'index.md'
+  - Miata: 'miata.md'
+
+extra_css:
+  - extra.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  
+markdown_extensions:
+  - admonition
+  - toc:
+      toc_depth: 4
+      baselevel: 1
+      permalink: "#"
+  - attr_list
+  - tables
+  - mdx_math
+plugins:
+   - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+       auto_caption: false
+       caption_position: bottom
+       background: white
+       shadow: true
+       manual: false
