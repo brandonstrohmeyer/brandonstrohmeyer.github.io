@@ -1,0 +1,89 @@
+/* 
+I'm a backend guy, I don't know how to move things around a webpage.
+
+Most of these tweaks courtesy of Inspect + ChatGPT. 
+*/
+
+/* Hide the TOC on the About page */
+body.homepage .bs-sidebar{
+    display: none;
+    }
+
+/* Disable the top navigation (next, prev) */
+.ms-md-auto{
+    display: none;
+    }
+
+/* Bold links */
+a:not(#img-link) {
+    font-weight: bold;
+}
+
+/* Format images */
+.docimg{ width: 20em;  }
+
+img[src*='#left'] {
+    padding-right: 2em;
+    float: left;
+}
+
+img[src*='#right'] {
+    float: right;
+}
+
+h1 {
+    font-weight: bold;
+    padding-top: .5em;
+  }
+
+ h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 1em;
+  }
+
+/* Give second level headings a little padding in the TOC */
+  li[data-bs-level="2"] {
+    padding-left: 20px; 
+  }
+
+/* Fix the hover action on the side bar */  
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    border-right: 1px solid;
+}
+.bs-sidebar .nav > li > a.active,
+.bs-sidebar .nav > li > a.active:hover,
+.bs-sidebar .nav > li > a.active:focus {
+    font-weight: bold;
+    background-color: transparent;
+    border-right: 0px solid;
+}
+
+/* Style blackquotes */
+blockquote {              
+    font-style: italic;     
+    border-left: 1px solid;
+    margin-left: 4em;
+    padding-left: 2em;           
+  }
+
+/* Style admonitions */
+.admonition {
+    border-radius: .2rem;
+}
+
+.admonition > .admonition-title {
+    margin: 0;
+    padding: .40rem 1rem;
+    background: rgba(0,0,0,0.03);
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+      border-bottom-color: rgba(0, 0, 0, 0.125);
+    
+  }
+
+/* Style def lists */
+dt {
+    margin-top: 20px; 
+  }
