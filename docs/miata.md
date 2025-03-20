@@ -18,9 +18,8 @@ The main Battery Positive (B+) connection is 4AWG and runs through the interior 
 
 
 <p>
-  <img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" />
-  <img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" /> 
-  <img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" />
+  <img src="/img/wiring/CabinPowerConnectors.jpg" width="200" />
+  <img src="/img/wiring/TransPowerLug.jpg" width="200" />
 </p>
 
 ## Starting and Charging
@@ -30,8 +29,7 @@ The starter and alternator primary studs are connected to the transmission tunne
 The engine wiring harness was designed to be quick-disconnect by way of two circular connectors. Amphenol circular connectors were chosen for cost reasons compared to their motorsport-equivalent. Instead of running the front-of-engine sensors around the side, they are instead routed through the valley between the intake and fuel rail to allow for a more condensed setup. One connector is dedicated for ECU and sensors, while the other has a few larger pins for high power demand items and is mostly dedicated for power into the engine bay. 
 
 <p>
-  <img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" />
-  <img src="https://dummyimage.com/1800x1200/d9c8d9/fff.png" width="200" /> 
+  <img src="/img/wiring/engineHarnessConnectors.png" width="200" />
 </p>
 
 # PDM
@@ -366,7 +364,23 @@ MotoIQ goes into this process in detail in this [blog post](http://www.motoiq.co
 ## Dashboard
 The dash is a custom [LRB Speed NA Miata Aluminum Dashboard](https://lrbspeed.com/product/na-miata-aluminum-dashboard/) painted [Krylon Textured Black](https://www.krylon.com/en/products/all-purpose-spray-paint/fusion-all-in-one-textured). LRB shows this is only compatible with NA6 ('89-'93) cars, but I had no issues installed it in my NA8 (1996) car.
 
+<p>
+  <img src="/img/interior/dash1.jpg" width="200" />
+  <img src="/img/interior/dash2.jpg" width="200" />
+</p>
+
 The PDM and ECU USB outputs were run to a USB hub which is connected to a panel mount USB connector, this allows for quick connection without having to dig around for wires under the dash. I do not have stalk connectors so designed and printed a trim piece that fits behind the PDM dash to cover the stalk switch cutouts.
+
+# Exterior
+## Wrap
+The car is wrapped with Avery Dennison SW900 Gloss Smoky Blue Vinyl Wrap | SW900-612-O. A 5x40 roll was sufficient with a decent amount left over. 
+
+## Rear Bumper
+Bumper is cut 5" down from the body line. Removes a lot of plastic while still covering the crash structure and being NASA TT6 legal. This does remove half of the bump support and it ended up a little floppy. Future efforts will be made to inject expanding foam between the yellow bumper support and outer bumper shell to increase support and rigidity. I created a [3d printed jig](https://www.thingiverse.com/thing:6985691) to mark the cut line around the bumper.
+<p>
+  <img src="/img/exterior/bumperTemplate1.png" width="200" />
+  <img src="/img/exterior/rearBumper1.png" width="350" />
+</p>
 
 # Parts Reference
 ## Wiring

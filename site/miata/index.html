@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Miata - stro.io</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/color-brewer.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../extra.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+     <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">stro.io</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Miata</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#wiring" class="nav-link">Wiring</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#main-power" class="nav-link">Main Power</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#starting-and-charging" class="nav-link">Starting and Charging</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#engine-wiring-harness" class="nav-link">Engine Wiring Harness</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#pdm" class="nav-link">PDM</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#connectors" class="nav-link">Connectors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#powering-up" class="nav-link">Powering up</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#alternator-field" class="nav-link">Alternator Field</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#calculated-gear" class="nav-link">Calculated Gear</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fuel-pump" class="nav-link">Fuel Pump</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fuel-level" class="nav-link">Fuel Level</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#wiper-control" class="nav-link">Wiper Control</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#start-stop" class="nav-link">Start Stop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ecu" class="nav-link">ECU</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#mounting" class="nav-link">Mounting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#tuning" class="nav-link">Tuning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#base-timing" class="nav-link">Base Timing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#can-setup" class="nav-link">CAN Setup</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#wideband" class="nav-link">Wideband</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#chassis" class="nav-link">Chassis</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#steering" class="nav-link">Steering</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#interior" class="nav-link">Interior</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#dashboard" class="nav-link">Dashboard</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#exterior" class="nav-link">Exterior</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#wrap" class="nav-link">Wrap</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#rear-bumper" class="nav-link">Rear Bumper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#parts-reference" class="nav-link">Parts Reference</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#wiring_1" class="nav-link">Wiring</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sensors" class="nav-link">Sensors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a class="glightbox" href="../img/miata-banner.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img" src="../img/miata-banner.jpg" /></a></p>
+<p><em>Updates are made periodically as I find more money to blow on things I don't really need, follow the <a href="https://github.com/brandonstrohmeyer/brandonstrohmeyer.github.io">Github Repo</a> to be notified of changes or <a href="https://www.instagram.com/stro38x/">Instagram</a> to follow along in real time.</em></p>
+<h1 id="wiring">Wiring<a class="headerlink" href="#wiring" title="Permanent link">#</a></h1>
+<p>All crimpers are not created equal, and cheaping out on wiring tooling was a mistake. Amazon special crimps and crimp tools were used, and it is almost certain they will cause issues in the future. </p>
+<p>This HP Academy <a href="https://www.hpacademy.com/technical-articles/course-guide-motorsport-wiring-tools-and-materials-resource/">article</a> goes into detail on better tools.</p>
+<p>Where possible, <a href="https://www.te.com/en/products/connectors/automotive-connectors/intersection/deutsch-dt-series-connectors.html">Deutsch DT</a> connectors were used to standardize hardware and build modular components. There is a small upfront cost in tooling but the better connector is worth the price.</p>
+<p>Most of the existing wiring was re-used for simplicities sake, however TXL is a good budget friendly middle ground for when new wiring was needed. 16 and 20 gauge TXL wire was used, with spools available from <a href="https://www.remingtonindustries.com/hook-up-wire/automotive/txl-60-volt/">Remington Industries</a>. 100' spools of 10 color wire are a good value with free shipping available. </p>
+<h2 id="main-power">Main Power<a class="headerlink" href="#main-power" title="Permanent link">#</a></h2>
+<p>The main Battery Positive (B+) connection is 4AWG and runs through the interior to the center console main disconnect switch. The output of the disconnect splits to two points: A SURLOK connector on the transmission tunnel and the PDM input feed. The SURLOK documentation shows the stud is M8...but neglects to clarify it's M8x1.00 fine thread. Additionally the SLPRBTPSO distribution lug will require hydraulic crimpers to properly terminate. Trying to use a pair of manual large-gauge cable crimps will end with broken crimpers and a disgusting looking crimp that can thankfully be hidden inside of the connector body. </p>
+<p>
+  <a class="glightbox" href="/img/wiring/CabinPowerConnectors.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/wiring/CabinPowerConnectors.jpg" width="200" /></a>
+  <a class="glightbox" href="/img/wiring/TransPowerLug.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/wiring/TransPowerLug.jpg" width="200" /></a>
+</p>
+
+<h2 id="starting-and-charging">Starting and Charging<a class="headerlink" href="#starting-and-charging" title="Permanent link">#</a></h2>
+<p>The starter and alternator primary studs are connected to the transmission tunnel distribution block, which connects them back to B+. The alternator voltage reference wire is also connected to this distribution block. It would be more ideal to run the reference wire directly to the B+ terminal, but the voltage drop along the 4AWG B+ cable should be minimal.</p>
+<h2 id="engine-wiring-harness">Engine Wiring Harness<a class="headerlink" href="#engine-wiring-harness" title="Permanent link">#</a></h2>
+<p>The engine wiring harness was designed to be quick-disconnect by way of two circular connectors. Amphenol circular connectors were chosen for cost reasons compared to their motorsport-equivalent. Instead of running the front-of-engine sensors around the side, they are instead routed through the valley between the intake and fuel rail to allow for a more condensed setup. One connector is dedicated for ECU and sensors, while the other has a few larger pins for high power demand items and is mostly dedicated for power into the engine bay. </p>
+<p>
+  <a class="glightbox" href="/img/wiring/engineHarnessConnectors.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/wiring/engineHarnessConnectors.png" width="200" /></a>
+</p>
+
+<h1 id="pdm">PDM<a class="headerlink" href="#pdm" title="Permanent link">#</a></h1>
+<p>An AIM PDM32 was chosen because it bundles data logging, GPS, digital dash, and an IMU sensor into a single package at an expensive-but-not-outrageous price point. Being a tiny Miata, the 6" dash was most appropriate.</p>
+<p>The AIM PDM32 has two 35 pin connectors, one gray (G) and one black (B).</p>
+<p>For reasons unknown, the PDM ignored logic that directly referenced input channels. Instead, a status variable had to be created which was controlled by the given channel, and then this variable referenced in other logic blocks.</p>
+<h2 id="connectors">Connectors<a class="headerlink" href="#connectors" title="Permanent link">#</a></h2>
+<p>The PDM has two 35 pin AMP connectors for input/output channels. The red wedgelock on the front of the connector must be unlocked, but not removed when inserting pins. To depin, twist and pull the wire.</p>
+<p>This <a href="https://www.youtube.com/watch?v=24bNFu7a9lc">video</a> gives a good demonstration on pinning/depinning the connector.</p>
+<h2 id="powering-up">Powering up<a class="headerlink" href="#powering-up" title="Permanent link">#</a></h2>
+<p>The AIM PDM32 requires +12v on pin G23 and GND on pin G13/G14 to turn on. A small wire is run directly from the disconnect switch in the center console in order to provide +12v to G23.</p>
+<h2 id="alternator-field">Alternator Field<a class="headerlink" href="#alternator-field" title="Permanent link">#</a></h2>
+<p>The Miata has a fairly standard 3-wire alternator with Sense, Field, and +B connections. The PDM supplies the +12v required to the Field (Exciter) connection in order to power the field winding and generate electricity. A 220Ω resistor is connected inline to the Field connection since the original warning light has been removed.</p>
+<h2 id="calculated-gear">Calculated Gear<a class="headerlink" href="#calculated-gear" title="Permanent link">#</a></h2>
+<p>The PDM was configured to display calculated gear number based on GPS speed and gearing. </p>
+<table>
+<thead>
+<tr>
+<th><div style="underline; width:13em; font-weight: bold; font-size: 15px;">Parameter</div></th>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">Value</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wheel Circumference</td>
+<td>1803mm (245/45/15 RS4)</td>
+</tr>
+<tr>
+<td>Axle (Diff) Ratio</td>
+<td>4.1</td>
+</tr>
+<tr>
+<td>Gear 1</td>
+<td>3.136</td>
+</tr>
+<tr>
+<td>Gear 2</td>
+<td>1.888</td>
+</tr>
+<tr>
+<td>Gear 3</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>Gear 4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gear 5</td>
+<td>0.814</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<details>
+   <summary>Reference</summary>
+   <ul>
+      <li> 
+         <a href="https://www.miata.net/garage/KnowYourCar/S8_Gears.html">Miata gear ratios</a> 
+      </li>
+   </ul>
+</details>
+
+<h2 id="fuel-pump">Fuel Pump<a class="headerlink" href="#fuel-pump" title="Permanent link">#</a></h2>
+<p>The Megasquirt ECU commands fuel pump on via pulling pin 1U to ground. This is fed into pin G26 (Channel Input 1) on the PDM, and switches on B8 (Mid Power 7) to engage the fuel pump.</p>
+<h2 id="fuel-level">Fuel Level<a class="headerlink" href="#fuel-level" title="Permanent link">#</a></h2>
+<p>The fuel level sender requires a pull up resistor to create a voltage divider. On a 1996 NA8 Miata, the sender measures 3Ω at full and 95Ω at empty. Using a 1kΩ resistor as a pull up, the following min/max sensor voltages can be calculated: </p>
+<ul>
+<li>
+<p>Minimum Output Voltage (Full Tank)
+<script type="math/tex; mode=display">V_{\text{out}}^{\text{min}} = 5 \times \frac{3}{1000 + 3} \approx 14.96 \, \text{mV}</script>
+</p>
+</li>
+<li>
+<p>Maximum Output Voltage (Empty Tank)
+<script type="math/tex; mode=display">V_{\text{out}}^{\text{max}} = 5 \times \frac{95}{1000 + 95} \approx 433.79 \, \text{mV}</script>
+</p>
+</li>
+</ul>
+<p>This is close, but real world testing revealed the following measurements:</p>
+<table>
+<thead>
+<tr>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">Fuel (gal)</div></th>
+<th><div style="width:10em; font-weight: bold; font-size: 15px;">mV</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>505</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td>505</td>
+</tr>
+<tr>
+<td>1</td>
+<td>505</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>505</td>
+</tr>
+<tr>
+<td>2</td>
+<td>385</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>315</td>
+</tr>
+<tr>
+<td>3</td>
+<td>297</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td>278</td>
+</tr>
+<tr>
+<td>4</td>
+<td>247</td>
+</tr>
+<tr>
+<td>4.5</td>
+<td>224</td>
+</tr>
+<tr>
+<td>5</td>
+<td>207</td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>180</td>
+</tr>
+<tr>
+<td>6</td>
+<td>164</td>
+</tr>
+<tr>
+<td>6.5</td>
+<td>164</td>
+</tr>
+<tr>
+<td>7</td>
+<td>141</td>
+</tr>
+<tr>
+<td>7.5</td>
+<td>120</td>
+</tr>
+<tr>
+<td>8</td>
+<td>107</td>
+</tr>
+<tr>
+<td>8.5</td>
+<td>97</td>
+</tr>
+<tr>
+<td>9</td>
+<td>87</td>
+</tr>
+<tr>
+<td>9.5</td>
+<td>78</td>
+</tr>
+<tr>
+<td>10</td>
+<td>68</td>
+</tr>
+<tr>
+<td>10.5</td>
+<td>58</td>
+</tr>
+<tr>
+<td>11</td>
+<td>53</td>
+</tr>
+<tr>
+<td>11.5</td>
+<td>43</td>
+</tr>
+<tr>
+<td>12</td>
+<td>24</td>
+</tr>
+<tr>
+<td>12.5</td>
+<td>24</td>
+</tr>
+<tr>
+<td>13</td>
+<td>24</td>
+</tr>
+<tr>
+<td>13.25</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+The tank was emptied and then refilled 0.5 gallons at a time recording the measurement of the fuel level sensor in the PDM. There is a dead zone at the top and bottom of the range, however setting a "Low Fuel" warning at 2 gallons is adequate. </p>
+<details>
+   <summary>Reference</summary>
+   <ul>
+      <li> 
+         <a href="https://www.aimtechnologies.com/support/faq/pdm/pdf/PDM%20Fuel.pdf">PDM Fuel</a> 
+      </li>
+      <li> 
+         <a href="https://www.youtube.com/watch?v=qqruX_tl9aI">What is a Pull Up Resistor?</a> 
+      </li>
+   </ul>
+</details>
+</p>
+<h2 id="wiper-control">Wiper Control<a class="headerlink" href="#wiper-control" title="Permanent link">#</a></h2>
+<p>By far the most convoluted thing to set up has been the Wipers. They are controlled via CAN keypad mapped to a multistable digital input with channel values of 0-2 for Off, Low, High. The NA Miata has a typical 5 wire wiper setup, with high/low/B+/park/ground. As the wipers wipe, an internal switch is activated when the wipers are in the "park" position which is fed back into the PDM. In the stock setup this park signal is fed back via relay to the low speed motor winding, so the motor self-powers even after the wiper switch is turned off. The problem is that the PDM cannot react fast enough to the park signal and so it shuts the wipers down when they are 1/4 of the way up the windscreen. To work around this, an additional timed wipe is executed after the wiper button is disengaged </p>
+<p>Physical connections:</p>
+<table>
+<thead>
+<tr>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">Wire</div></th>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">PDM Pin</div></th>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">Function</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BLU</td>
+<td>B5 MP4</td>
+<td>WIPER PARK +12v</td>
+</tr>
+<tr>
+<td>BLU/RED</td>
+<td>B6 MP5</td>
+<td>WIPER HIGH</td>
+</tr>
+<tr>
+<td>BLUE/WHT</td>
+<td>G1 HB1</td>
+<td>WIPER LOW</td>
+</tr>
+<tr>
+<td>BLUE/YEL</td>
+<td>G30 IN5</td>
+<td>WIPER PARK SW</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+Logical connections:</p>
+<dl>
+  <dt>Park</dt>
+  <dd>VarWiperInPark is True when wiper is in the park position. VarNeedPark is a multiposition switch that acts as a counter when the wipers are turned off mid-cycle. It will increment to S1 the first time it parks after being commanded off and this kicks off a timer in WiperLowHB. WiperPark output supplies power to the park switch, which is then read back by the PDM. ChanWiperInPark is an analog input at max sampling frequency as a digital input does not sample fast enough to read the park switch.</dd>
+  <a class="glightbox" href="/img/pdm/VarWiperInPark.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/VarWiperInPark.png" width="200" /></a>
+  <a class="glightbox" href="/img/pdm/VarNeedPark.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/VarNeedPark.png" width="200" /></a>
+  <a class="glightbox" href="/img/pdm/WiperPark.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/WiperPark.png" width="200" /></a>
+  <a class="glightbox" href="/img/pdm/ChanWiperInPark.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/ChanWiperInPark.png" width="200" /></a>
+  <dt>Low Speed</dt>
+  <dd>Controls low speed power output. When wipers are commanded off mid-cycle they will do one additional wipe and then start a 1.5 second timer. When this timer expires, the low speed PWM changes from 100% to 25% slowing the wipers down enough they will gracefully park instead of bouncing. A HB is used here to try and brake the motor when it shuts off, even though it doesn't really work because of the PDM reaction lag. Only one side of the HB is wired, which supplies power to the low speed winding.</dd>
+  <a class="glightbox" href="/img/pdm/VarWiperLow.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/VarWiperLow.png" width="200" /></a>
+  <a class="glightbox" href="/img/pdm/WiperLowHB.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/WiperLowHB.png" width="200" /></a>
+  <dt>High Speed</dt>
+  <dd>Controls high speed power output.</dd>
+  <a class="glightbox" href="/img/pdm/VarWiperHigh.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/VarWiperHigh.png" width="200" /></a>
+  <a class="glightbox" href="/img/pdm/WiperHigh.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/pdm/WiperHigh.png" width="200" /></a>
+</dl>
+
+<p><br>
+Reference:</p>
+<ul>
+<li><a href="https://www.aimtechnologies.com/support/faq/pdm/pdf/PDM32%20Wipers.pdf">AIM PDM Wipers</a></li>
+<li><a href="https://iainseven.wordpress.com/2009/09/20/wiper-motor-wiring/">Iain Hall Wiper Motor Wiring</a></li>
+<li><a href="https://www.hpacademy.com/forum/pdm-installation-and-configuration/show/wiper-control-with-an-aim-pdm32/">Wiper Control with an AIM PDM32</a></li>
+<li><a href="https://www.facebook.com/groups/2334772576658708/search/?q=wiper">AIM PDM Users Facebook Group</a></li>
+<li><a href="https://www.facebook.com/share/p/P1ispLk2F4mDj7sU/">Facebook Post (mirrored below)</a>
+ 
+<details>
+  <summary>Facebook Group Post</summary>
+
+<blockquote>
+Wiper control, recap of what worked.
+<br>
+1) An analog input (rather than digital) at a high frequency (maybe 200Hz) gives faster PARK feedback to the PDM. Digital inputs are limited to 20Hz. You'll need a pull-up resistor. I got bad data (switch chatter) with 2200 ohms. Going to 220 ohms fixed that.
+<br>
+2) Assuming you have a high and low speed feeds (and don't have to reverse the motors yourself), you should use a full-bridge to power the low or high speed input. You don't have to actually wire the ground, but you want the logic to brake the motor when in park. RS3 cannot brake in half-bridge mode.
+<br>
+3) Not sure if I still need this, but I used PWM to slow the motor during parking. An issue is that the frequency in full-bridge mode is limited. To get around this, I use 1000Hz 60% PWM during parking and put the full-bridge on the high speed signal. Take care in your programming to avoid simultaneously powering and braking.
+<br>
+4) I use a multi-state status variable to track PARKING NEEDED. It's turned on when either high or low motors are on and turned off when they are both off and the park signal is true.
+UPDATE: I added a "active after" time of 0.05 seconds to the analog PARK input, which seemed to reduce the problem with switch chatter prematurely stopping the wipers mid-stroke.
+<br>
+</blockquote>
+<blockquote>
+Setup: 
+<br>
+
+
+<pre><code>WiperButton = OFF/INT/LOW/HIGH
+</code></pre>
+
+
+<pre><code>Wiper Int Osc = square wave 1s / 5s
+</code></pre>
+
+
+<pre><code>UnloadedRun = Run and WiperButton = INT
+</code></pre>
+
+
+<pre><code>Wiper Low Status = 
+UnloadedRun = RUN AND
+
+(WiperButton = LOW OR WiperIntOsc = ON OR
+
+(WiperButton = OFF and WasherStatus = ON) )
+
+Wiper Hi Status = UnloadedRun = RUN and WiperButton = HIGH
+</code></pre>
+
+
+
+<pre><code>WasherStatus = 
+UnloadedRun = RUN and WasherButton = ON
+</code></pre>
+
+
+
+<pre><code>Wiper Needs Park =
+ON: Wiper Low Status = ON or Wiper High Status = ON
+OFF: WiperPark (voltage) &gt; 4v
+
+</code></pre>
+
+
+
+<pre><code>Wiper Low (output) = PWM, 1000Hz
+100%: Wiper Low Status = ON
+60%: Wiper Needs Park = TRY AND Unloaded Run = Run AND Wiper Low Status = OFF and Wiper High Status = OFF
+
+</code></pre>
+
+
+
+<pre><code>Wiper High (full bridge) =
+Both Low (stopping) Wiper Low Status = OFF ANDWiper High Status = OFF AND Wiper Need Park = OFF
+High: Wiper Hi Status = ON
+
+</code></pre>
+
+<br>
+Again, I'm not sure the PWM is needed, but this is what I'm using right now.
+<br>
+Use a 220 ohm pull up on the analog input between 5v and the input. 200Hz.
+</blockquote>
+
+<blockquote>
+ That means I have a Status Variable labeled Wiper Int Osc which is defied to be a square wave with 1 second on and 5 seconds off. The next = is a typo which I just fixed. Unloaded Run is a status variable which is defined to be Run is TRUE AND keypad wiper button called WiperButton is a multi-step button currently equal to INT. The 4 steps are OFF, INT, LOW, and HI
+ </blockquote>
+</details>
+</li>
+</ul>
+<h2 id="start-stop">Start Stop<a class="headerlink" href="#start-stop" title="Permanent link">#</a></h2>
+<p>A K8 keypad is used to control start/stop functions. All engine power outputs are controlled by a <code>VarEnginePower</code> variable, which is <code>true</code> when either engine RPM is greater than 375 or the K8 Start/Stop button status is <code>LONG</code>. This triggers the starter and once engine RPM is above 375 the <code>VarEnginePower</code> variable is latched <code>true</code>.</p>
+<p>To stop the engine, a short press of the K8 Start/Stop button will set <code>VarEnginePower</code> variable to <code>false</code> for 5 seconds, killing ignition power and allowing enough time for the engine to stop running.</p>
+<h1 id="ecu">ECU<a class="headerlink" href="#ecu" title="Permanent link">#</a></h1>
+<h2 id="mounting">Mounting<a class="headerlink" href="#mounting" title="Permanent link">#</a></h2>
+<p>The ECU is mounted above the trans tunnel via vibration insulators threaded into jack nuts. </p>
+<p><br></p>
+<details>
+   <summary>Reference</summary>
+   <ul>
+      <li> 
+         <a href="https://www.amazon.com/dp/B0BY1WYDHS?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1">Jack Nuts/Plus Nuts</a> 
+      </li>
+      <li> 
+         <a href="https://www.amazon.com/dp/B07KT3QRX5?ref=ppx_yo2ov_dt_b_fed_asin_title&th=11">Vibration Isolators</a> 
+      </li>
+   </ul>
+</details>
+
+<h2 id="tuning">Tuning<a class="headerlink" href="#tuning" title="Permanent link">#</a></h2>
+<p>Autotune was enough for getting a decent VE table. Additional tuning to the AE and Idle tables was required.</p>
+<p>https://www.youtube.com/@TurbineResearch</p>
+<h2 id="base-timing">Base Timing<a class="headerlink" href="#base-timing" title="Permanent link">#</a></h2>
+<h2 id="can-setup">CAN Setup<a class="headerlink" href="#can-setup" title="Permanent link">#</a></h2>
+<p>The ECU is connected to both the PDM and Wideband controller via CAN. Despite AEM having some proprietary AEMnet elements, no special configuration was needed on either the ECU or PDM. The ECU and PDM provide the required 120Ω resistance termination at each end of the network.</p>
+<details>
+   <summary>Reference</summary>
+   <ul>
+      <li> 
+         <a href="https://aim-sportline.com/download/ecu/racing/Megasquirt_MS2-MS3_101_eng.pdf">Megasquirt dash broadcast</a> 
+      </li>
+   </ul>
+
+<details>
+  <summary>Some considerations from <a href="https://www.miataturbo.net/megasquirt-18/psa-when-can-you-use-aem-x-series-can-other-devices-can-bus-108238/">miataturbo.net</a>:</summary>
+
+ <blockquote>
+You have an MS3, an AEM X-Series gauge and you want to feed the wideband signal to the MS3 through the CAN Bus, but you also have other devices on the CAN Bus and you are worried about compatibility.
+
+Let's make a a few remarks.
+
+<br>
+<br>
+- The CAN Bus can have BOTH 11bit and 29bit messages running through it at the same time. This is perfectly fine and many new cars do this.
+<br>
+<br>
+- The MS3 uses both 11bit and 29bit CAN.
+<br>
+<br>
+- 11bit CAN is used for 1-way communication from the MS3 to other devices ("CAN Broadcasting") where the MS3 broadcasts messages and other devices on the bus receive them. It can also be used as "CAN Receiving", where the MS3 also picks up messages broadcasted from other devices.
+<br>
+<br>
+- 29bit CAN is used by the MS3 for 2-way communication. It's a custom request-respone protocol (although there are 1-way commands on this protocol as well).
+<br>
+<br>
+- Each CAN message has an ID, also called an address. On the 11bit CAN, this signifies who sent the message or what it contains. There is no way to interpret this; You have to know for example, that the message with ID: 0x100 is sent by the ECU, and it contains the RPM signal, the TPS, the CLT and the IAT.
+<br>
+<br>
+- On the custom MS3 29bit protocol, things are different. Because 29 bits is a lot of space, you can put the sender address, the receiver address, the command type (ie request data from ECU, send data to ECU, perform a Burn command, etc), the location of the data to request/store, etc. So when you see an MS3 protocol 29bit ID, you know exactly what it is.
+<br>
+<br>
+The problem here is that the AEM X-Series uses 29bit CAN. The default ID of each message is 0x180. Translated to MS3 CAN, this ID implies:
+<br>
+<br>
+* This is a message from the MS3 (CAN ID: 0)<br>
+* This message is to be received from the device that has a CAN ID of 3.<br>
+* The command type is "MSG_CMD", this tells the target device to store the data attached to this message.<br>
+* The table to store this message's data on the target device is 0.<br>
+* The offset with the table to store this message's data on the target device is 0.<br>
+<br>
+<br>
+What does this mean? If you DON'T have a device on the CAN Bus that has ID: 3, it is perfectly safe to install the AEM X-Gauge on your bus.
+
+It might even be safe to install it even if you have a device on the Bus with an ID: 3, if that device doesn't actually implement the MSG_CMD message type (it will just receive it and ignore it) OR if the device doesn't store data on the table 0, offset 0.
+
+How do you know what ID your devices are using? It will be either be in the documentation of your device or the settings of your device. Most MS-compatible devices have configurable CAN IDs. If you still don't know, ask the manufacturer.
+ </blockquote>
+</details>
+
+</details>
+</p>
+<h2 id="wideband">Wideband<a class="headerlink" href="#wideband" title="Permanent link">#</a></h2>
+<p><a href="https://www.aemelectronics.com/products/dashes_and_gauges/wideband_gauges/x_series_inline_wideband/parts/30-0310">AEM 30-0310 (LSU4.9)</a> </p>
+<p>The LSU 4.9 has a trim resistor built into the sensor-side connector body, do not attempt to cut this connector off and replace with a DTM connector, it will cost $100 for a new sensor or the controller must be setup for free-air calibration.</p>
+<p>This conversion was done due to relocating the Lambda sensor connector to the transmission tunnel and a flanged bulkhead style connector was desired.</p>
+<h1 id="chassis">Chassis<a class="headerlink" href="#chassis" title="Permanent link">#</a></h1>
+<h2 id="steering">Steering<a class="headerlink" href="#steering" title="Permanent link">#</a></h2>
+<p>Power steering was deleted and pinion shaft welded. The 96-97 Miatas use a different power steering rack than earlier NA models, and a hydraulic press is required to push a seal out of the housing. </p>
+<p>MotoIQ goes into this process in detail in this <a href="http://www.motoiq.com/MagazineArticles/ID/1709/Project-Miatabusa-Part-5--De-Powering-the-Steering-Rack.aspx">blog post</a>.</p>
+<h1 id="interior">Interior<a class="headerlink" href="#interior" title="Permanent link">#</a></h1>
+<h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
+<p>The dash is a custom <a href="https://lrbspeed.com/product/na-miata-aluminum-dashboard/">LRB Speed NA Miata Aluminum Dashboard</a> painted <a href="https://www.krylon.com/en/products/all-purpose-spray-paint/fusion-all-in-one-textured">Krylon Textured Black</a>. LRB shows this is only compatible with NA6 ('89-'93) cars, but I had no issues installed it in my NA8 (1996) car.</p>
+<p>
+  <a class="glightbox" href="/img/interior/dash1.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/interior/dash1.jpg" width="200" /></a>
+  <a class="glightbox" href="/img/interior/dash2.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/interior/dash2.jpg" width="200" /></a>
+</p>
+
+<p>The PDM and ECU USB outputs were run to a USB hub which is connected to a panel mount USB connector, this allows for quick connection without having to dig around for wires under the dash. I do not have stalk connectors so designed and printed a trim piece that fits behind the PDM dash to cover the stalk switch cutouts.</p>
+<h1 id="exterior">Exterior<a class="headerlink" href="#exterior" title="Permanent link">#</a></h1>
+<h2 id="wrap">Wrap<a class="headerlink" href="#wrap" title="Permanent link">#</a></h2>
+<p>The car is wrapped with Avery Dennison SW900 Gloss Smoky Blue Vinyl Wrap | SW900-612-O. A 5x40 roll was sufficient with a decent amount left over. </p>
+<h2 id="rear-bumper">Rear Bumper<a class="headerlink" href="#rear-bumper" title="Permanent link">#</a></h2>
+<p>Bumper is cut 5" down from the body line. Removes a lot of plastic while still covering the crash structure and being NASA TT6 legal. This does remove half of the bump support and it ended up a little floppy. Future efforts will be made to inject expanding foam between the yellow bumper support and outer bumper shell to increase support and rigidity. I created a <a href="https://www.thingiverse.com/thing:6985691">3d printed jig</a> to mark the cut line around the bumper.</p>
+<p>
+  <a class="glightbox" href="/img/exterior/bumperTemplate1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/exterior/bumperTemplate1.png" width="200" /></a>
+  <a class="glightbox" href="/img/exterior/rearBumper1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/exterior/rearBumper1.png" width="350" /></a>
+</p>
+
+<h1 id="parts-reference">Parts Reference<a class="headerlink" href="#parts-reference" title="Permanent link">#</a></h1>
+<h2 id="wiring_1">Wiring<a class="headerlink" href="#wiring_1" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">Part Number</div></th>
+<th><div style="width:10em; font-weight: bold; font-size: 15px;">Description</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SLPRBTPSO</td>
+<td>B+ Distribution Lug</td>
+</tr>
+<tr>
+<td>SLPPB25BSO</td>
+<td>B+ Cabin PDM Feed</td>
+</tr>
+<tr>
+<td>HDP24-24-21SE</td>
+<td>Engine bay power bulkhead</td>
+</tr>
+<tr>
+<td>HDP26-24-21PE</td>
+<td>Engine bay power plug</td>
+</tr>
+<tr>
+<td>HDP24-24-31SE</td>
+<td>Engine bay sensor bulkhead</td>
+</tr>
+<tr>
+<td>HDP26-24-31PE</td>
+<td>Engine bay sensor plug</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sensors">Sensors<a class="headerlink" href="#sensors" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th><div style="underline; width:10em; font-weight: bold; font-size: 15px;">Part Number</div></th>
+<th><div style="width:10em; font-weight: bold; font-size: 15px;">Description</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bosch 17212</td>
+<td>LSU 4.9 02 sensor (short wire harness)</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+</html>
