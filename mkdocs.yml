@@ -6,6 +6,7 @@ theme:
 nav:
   - About: 'index.md'
   - Miata: 'miata.md'
+  - Driver: 'driver.md'
 
 extra_css:
   - extra.css

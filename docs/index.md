@@ -47,7 +47,7 @@
             I'm a Software Engineer specializing in infrastructure automation and use motorsports as an outlet to satisfy my taste for over-engineering. 
         </p>
         <p>
-            I build cars, I race cars, and I teach others how to drive slow cars fast as an HPDE Instructor with <a href="https://drivenasa.com/">NASA</a> in the Southeast region.
+            I build cars, I race cars, and I teach others how to drive cars fast as an HPDE Instructor in the Southeast region.
         </p>
         <p>
             I have a dog, cat, and to-be wife all based out of North Carolina.
