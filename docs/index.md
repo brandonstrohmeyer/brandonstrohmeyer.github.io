@@ -28,21 +28,14 @@
   </div>
   <div class="landing-right">
     <div class="projects-header">
-      <div class="projects-label">Projects</div>
+      <div class="projects-label">Useful Nonsense</div>
     </div>
     <div class="project-grid">
       <article class="project-card">
-        <h3><a href="https://github.com/brandonstrohmeyer/imu_video_sync">IMU Video Sync</a></h3>
-        <p>
-          Motorsport tool that aligns data telemetry logs with on track video to produce accurate offsets for data overlays. 
-        </p>
-      </article>
-      <article class="project-card">
-        <h3><a href="miata/">Miata</a></h3>
-        <p>
-          A deep dive into the build, track prep, and lessons learned from running a
-          purpose-built Miata.
-        </p>
+        <a class="project-link" href="https://github.com/brandonstrohmeyer/imu_video_sync">
+          <img class="project-logo" src="img/software-imu-video-sync.png" alt="IMU Video Sync logo">
+          <span class="project-title">IMU Video Sync</span>
+        </a>
       </article>
     </div>
   </div>
